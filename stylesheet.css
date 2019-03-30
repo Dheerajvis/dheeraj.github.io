@@ -1,0 +1,235 @@
+/*font-family: 'Staatliches', cursive;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+
+*{
+    transition: 0.3s;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: rgb(206, 206, 206);
+    margin:0;
+    padding:0;
+}
+
+.box-texts h3, .box-texts p{
+    color: black;
+}
+
+
+.container{
+    width:90%;
+    margin: auto;
+}
+
+#navbar{
+    display: flex;
+    background: rgb(255, 255, 255);
+    min-height:70px ;
+    margin: 0;
+    padding: 0;
+}
+
+.logo h1{
+    float:left;
+    margin: 0;
+    padding: 10px 0;
+}
+
+ul{
+    display: flex;
+    float: right;
+    margin: 0;
+    padding: 25px 0px;
+
+}
+
+ul li{
+    list-style: none;
+    padding: 0 15px;
+}
+
+ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    color:black;
+    font-weight: 400;
+}
+
+.active a{
+    font-weight: 600;
+}
+
+#top-head{
+    background: url(background.jpg);
+    height: 450px;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#top-head h1{
+    padding-top: 40px;
+    margin: 0;
+    font-size: 100px;
+}
+
+#top-head h1, h3, p{
+    color:white;
+}
+
+#top-head h3{
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 30px;
+    letter-spacing: 0.3em;
+}
+
+#top-head p{
+    font-weight: 200;
+    line-height: 1.5em;
+    font-size: 18px;
+}
+
+#newsletter{
+    display: flex;
+    background: black;
+    min-height: 70px;
+}
+
+#newsletter h1{
+    color:white;
+    margin: 0;
+    float: left;
+    padding: 20px 0;
+    font-weight: 400;
+}
+
+#newsletter form{
+    padding: 16px 0;
+    float: right;
+}
+
+#newsletter form input{
+    width: 250px;
+    height: 40px;
+    padding: 15px;
+    font-weight: 600;
+    font-size: 1em;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    outline: none;
+}
+
+
+#newsletter form input{
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 250px;
+    height: 40px;
+    margin: 0 5px;
+    padding: 0 15px;
+    font-weight: 600;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    outline: none;
+}
+.submit-btn{
+    font-family: 'Roboto Condensed', sans-serif;
+    height: 40px;
+    padding: 0 20px;
+    border: none;
+    font-size:1.1em;
+    font-weight: 600;
+    border-radius: 30px;
+    background: white;
+    outline: none;
+}
+
+#box-end{
+    background: #ffffff;
+}
+
+.box-main{
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+
+.box{
+    padding: 30px 10px 10px 10px;
+}
+
+.icon{
+    font-size: 5em;
+}
+
+
+footer{
+    text-align: center
+}
+
+@media (max-width: 480px){
+    #navbar{
+        display: flex;
+        flex-direction: row;
+    }
+    .logo h1{
+        float: unset;
+        text-align: center;
+    }
+    nav ,#top-head p{
+        display: none;
+    }
+    #top-head{
+        height: 260px;
+        background-size: 150%;
+        background-repeat: no-repeat;
+    }
+    #top-head h1{
+       display: none;
+    }
+    #top-head h3{
+        font-weight: 200;
+        font-size: 30px;
+        letter-spacing: 0.2em;
+        margin: 0;
+        padding: 90px 0px;
+    }
+    #newsletter{
+        display: flex;
+        flex-direction: column;
+        min-height: 70px;
+    }
+    #newsletter h1{
+        float: unset;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+    #newsletter form{
+        display:block;
+        text-align: center;
+    }
+    #newsletter form input{
+        width: 250px;
+        height: 40px;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+    .submit-btn{
+        height: 40px;
+        width: 120px; 
+    }
+    .box-main{
+        display:block;
+        width: 100%;
+    }
+    .icon{
+        display: none;
+    }
+}
